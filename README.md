@@ -28,3 +28,5 @@ Example:
    Baghdad -->      NNP -->  I-NP -->  I-LOC 
    
    . -->            . -->    O -->     O 
+   
+The data consists of three files per language: one training file and two test files testa and testb. The first test file will be used in the development phase for finding good parameters for the learning system. The second test file will be used for the final evaluation. There are data files available for English and German. The German files contain an extra column (the second) which holds the lemma of each word.
