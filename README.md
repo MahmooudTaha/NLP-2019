@@ -15,16 +15,16 @@ The German data is a collection of articles from the Frankfurter Rundschau. The 
 
 Example:
 
-   U.N. -->         NNP -->  I-NP  I-ORG   
+   U.N. -->         NNP -->  I-NP -->  I-ORG   
    
-   official -->     NN -->   I-NP  O 
+   official -->     NN -->   I-NP -->  O 
    
-   Ekeus -->        NNP -->  I-NP  I-PER 
+   Ekeus -->        NNP -->  I-NP -->  I-PER 
    
-   heads -->        VBZ -->  I-VP  O 
+   heads -->        VBZ -->  I-VP -->  O 
    
-   for -->          IN -->   I-PP  O 
+   for -->          IN -->   I-PP -->  O 
    
-   Baghdad -->      NNP -->  I-NP  I-LOC 
+   Baghdad -->      NNP -->  I-NP -->  I-LOC 
    
-   . -->            . -->    O     O 
+   . -->            . -->    O -->     O 
