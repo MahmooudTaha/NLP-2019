@@ -15,7 +15,7 @@ The German data is a collection of articles from the Frankfurter Rundschau. The 
 
 Example:
 
-   U.N.         NNP  I-NP  I-ORG 
+   U.N.           NNP     I-NP     I-ORG   
    
    official     NN   I-NP  O 
    
