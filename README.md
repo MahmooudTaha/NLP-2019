@@ -12,3 +12,13 @@ The CoNLL-2003 shared task data files contain four columns separated by a single
 The English data is a collection of news wire articles from the Reuters Corpus. The annotation has been done by people of the University of Antwerp. Because of copyright reasons we only make available the annotations. In order to build the complete data sets you will need access to the Reuters Corpus. It can be obtained for research purposes without any charge from NIST.
 
 The German data is a collection of articles from the Frankfurter Rundschau. The named entities have been annotated by people of the University of Antwerp. Only the annotations are available here. In order to build these data sets you need access to the ECI Multilingual Text Corpus. It can be ordered from the Linguistic Data Consortium.
+
+Example:
+
+   U.N.         NNP  I-NP  I-ORG 
+   official     NN   I-NP  O 
+   Ekeus        NNP  I-NP  I-PER 
+   heads        VBZ  I-VP  O 
+   for          IN   I-PP  O 
+   Baghdad      NNP  I-NP  I-LOC 
+   .            .    O     O 
