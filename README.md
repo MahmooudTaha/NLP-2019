@@ -35,6 +35,6 @@ Why this dataset is helpful or playful?
 
 It might not sound so interested for earlier versions, but when you are able to pick intent and custom named entities from your own sentence with more features then, it is getting interested and helps you solve real business problems(like picking entities from Electronic Medical Records, etc)
 ## Delivery
-	 - [x] Machine Learning Approach
-  - [ ] Deep Learning Approach
-  - [ ] Classic NLP approach
+	- [x] Machine Learning Approach
+  	- [x] Deep Learning Approach
+  	- [ ] Classic NLP approach
