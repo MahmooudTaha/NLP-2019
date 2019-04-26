@@ -5,28 +5,32 @@ Project Defenition:
 
 Named-entity recognition (NER) (also known as entity identification, entity chunking and entity extraction) is a subtask of information extraction that seeks to locate and classify named entity mentions in unstructured text into pre-defined categories such as the person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.
 
-Dataset: CONLL2003
+# Dataset: GMB(Groningen Meaning Bank)
 
-The CoNLL-2003 shared task data files contain four columns separated by a single space. Each word has been put on a separate line and there is an empty line after each sentence. The first item on each line is a word, the second a part-of-speech (POS) tag, the third a syntactic chunk tag and the fourth the named entity tag. The chunk tags and the named entity tags have the format I-TYPE which means that the word is inside a phrase of type TYPE. Only if two phrases of the same type immediately follow each other, the first word of the second phrase will have tag B-TYPE to show that it starts a new phrase. A word with tag O is not part of a phrase.
+## Context: 
+Annotated Corpus for Named Entity Recognition using GMB(Groningen Meaning Bank) corpus for entity classification with enhanced and popular features by Natural Language Processing applied to the data set.
 
-The English data is a collection of news wire articles from the Reuters Corpus. The annotation has been done by people of the University of Antwerp. Because of copyright reasons we only make available the annotations. In order to build the complete data sets you will need access to the Reuters Corpus. It can be obtained for research purposes without any charge from NIST.
+## Content: 
+This is the extract from GMB corpus which is tagged, annotated and built specifically to train the classifier to predict named entities such as name, location, etc.
 
-The German data is a collection of articles from the Frankfurter Rundschau. The named entities have been annotated by people of the University of Antwerp. Only the annotations are available here. In order to build these data sets you need access to the ECI Multilingual Text Corpus. It can be ordered from the Linguistic Data Consortium.
+## Number of tagged entities:
+`'O': 1146068', geo-nam': 58388, 'org-nam': 48034, 'per-nam': 23790, 'gpe-nam': 20680, 'tim-dat': 12786, 'tim-dow': 11404, 'per-tit': 9800, 'per-fam': 8152 'tim-yoc': 5290, 'tim-moy': 4262, 'per-giv': 2413, 'tim-clo': 891, 'art-nam': 866, 'eve-nam': 602, 'nat-nam': 300, 'tim-nam': 146, 'eve-ord': 107, 'per-ini': 60 'org-leg': 60, 'per-ord': 38, 'tim-dom': 10, 'per-mid': 1, 'art-add': 1`
 
-Example:
+## Essential info about entities:
 
-   U.N. -->         NNP -->  I-NP -->  I-ORG   
-   
-   official -->     NN -->   I-NP -->  O 
-   
-   Ekeus -->        NNP -->  I-NP -->  I-PER 
-   
-   heads -->        VBZ -->  I-VP -->  O 
-   
-   for -->          IN -->   I-PP -->  O 
-   
-   Baghdad -->      NNP -->  I-NP -->  I-LOC 
-   
-   . -->            . -->    O -->     O 
-   
-The data consists of three files per language: one training file and two test files testa and testb. The first test file will be used in the development phase for finding good parameters for the learning system. The second test file will be used for the final evaluation. There are data files available for English and German. The German files contain an extra column (the second) which holds the lemma of each word.
+ - geo = Geographical Entity
+ - org = Organization
+ - per = Person
+ - gpe = Geopolitical Entity
+ - tim = Time indicator
+ - art = Artifact
+ - eve = Event
+ - nat = Natural Phenomenon
+ - Total Words Count = 1354149 Target Data Column: "tag"
+
+## Inspiration: 
+This dataset is getting more interested because of more features added to the recent version of this dataset. Also, it helps to create a broad view of Feature Engineering with respect to this dataset.
+
+Why this dataset is helpful or playful?
+
+It might not sound so interested for earlier versions, but when you are able to pick intent and custom named entities from your own sentence with more features then, it is getting interested and helps you solve real business problems(like picking entities from Electronic Medical Records, etc)
