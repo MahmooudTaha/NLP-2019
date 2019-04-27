@@ -37,4 +37,4 @@ It might not sound so interested for earlier versions, but when you are able to 
 ## Delivery
 	- [x] Machine Learning Approach
   	- [x] Deep Learning Approach
-  	- [ ] Classic NLP approach
+  	- [x] Classic NLP approach
