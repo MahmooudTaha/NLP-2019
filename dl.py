@@ -13,7 +13,7 @@ from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 from keras.models import Model, Input
 from keras.layers import LSTM, Embedding, Dense, TimeDistributed, Dropout, Bidirectional
-from sklearn.metrics import classification_report
+from sklearn.metrics import classification_reportو precision_score, recall_score, f1_score
 #from seqeval.metrics import precision_score, recall_score, f1_score, classification_report
 
 """ Load and prepare the Dataset """
@@ -142,5 +142,6 @@ def reemovNestings (l):
 #pred_labels_np = np.array(pred_labels)
 #test_labels_np = np.array(test_labels)
 
+print("F1-score: {:.1%}".format(f1_score(test_labels, pred_labels)))
 print(classification_report(test_labels, pred_labels))
 
