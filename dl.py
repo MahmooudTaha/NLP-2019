@@ -18,7 +18,7 @@ from sklearn.metrics import classification_report
 
 """ Load and prepare the Dataset """
 data = pd.read_csv("ner_dataset.csv", encoding="latin1")
-data = data[:100000]
+#data = data[:100000]
 data = data.fillna(method="ffill")
 
 # data.tail(10)
