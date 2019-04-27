@@ -13,8 +13,8 @@ from keras.utils import to_categorical
 from sklearn.model_selection import train_test_split
 from keras.models import Model, Input
 from keras.layers import LSTM, Embedding, Dense, TimeDistributed, Dropout, Bidirectional
-from sklearn.metrics import classification_reportو precision_score, recall_score, f1_score
-#from seqeval.metrics import precision_score, recall_score, f1_score, classification_report
+#from sklearn.metrics import classification_reportو precision_score, recall_score, f1_score
+from seqeval.metrics import precision_score, recall_score, f1_score, classification_report
 
 """ Load and prepare the Dataset """
 data = pd.read_csv("ner_dataset.csv", encoding="latin1")
